@@ -43,6 +43,7 @@ export const SANTIAGO_INFO = {
   linkedin: "https://www.linkedin.com/in/santiago-zevallos-b6a29b44/",
   tiktok: "https://www.tiktok.com/@santiagoinvierte",
   youtube: "https://www.youtube.com/@santiago.invierte",
+  email: "santiago.zevallosq@gmail.com",
   credentials: [
     {
       title: "Economista por la PUCP",
