@@ -123,42 +123,11 @@ export const Home: React.FC = () => {
       {/* AUTORIDAD */}
       <AuthoritySection />
 
-      {/* METODOLOGÍA */}
-      <section className="py-20 bg-slate-50/70 border-y border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mb-12">
-            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">03 // METODOLOGÍA</div>
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
-              Problema → Información → IA → Resultado → Sistema reutilizable
-            </h2>
-            <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">
-              El objetivo no es obtener una respuesta bonita una sola vez, sino construir una forma de trabajo que puedas repetir.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-            {[
-              ['01', 'Problema real', 'Partimos de una tarea que hoy consume tiempo o genera fricción.'],
-              ['02', 'Información', 'Ordenamos documentos, datos, contexto y restricciones.'],
-              ['03', 'IA', 'Elegimos la herramienta y diseñamos una instrucción adecuada.'],
-              ['04', 'Resultado', 'Construimos un entregable útil: informe, dashboard, web, contenido o análisis.'],
-              ['05', 'Sistema', 'Documentamos el flujo para volverlo reutilizable y mejorarlo con el tiempo.']
-            ].map(([n, title, desc]) => (
-              <div key={n} className="bg-white p-5 rounded-2xl border border-slate-200">
-                <span className="text-2xl font-black text-emerald-700 block">{n}</span>
-                <h3 className="font-bold text-slate-950 mt-2">{title}</h3>
-                <p className="text-xs text-slate-600 mt-2 leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* PROMPTS A SISTEMAS */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-4">
-            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">04 // EVOLUCIÓN</div>
+            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">03 // EVOLUCIÓN</div>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
               De prompts aislados a sistemas de trabajo con IA
             </h2>
@@ -187,7 +156,7 @@ export const Home: React.FC = () => {
       <section className="py-20 bg-slate-950 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <div className="text-xs font-mono tracking-widest text-emerald-400 uppercase mb-2">05 // FORMAS DE TRABAJO</div>
+            <div className="text-xs font-mono tracking-widest text-emerald-400 uppercase mb-2">04 // FORMAS DE TRABAJO</div>
             <h2 className="text-3xl sm:text-4xl font-black">¿Cómo puedo ayudarte?</h2>
           </div>
 
@@ -236,7 +205,7 @@ export const Home: React.FC = () => {
       {/* CALCULADORA */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 max-w-3xl">
-          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">06 // DIAGNÓSTICO INTERACTIVO</div>
+          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">05 // DIAGNÓSTICO INTERACTIVO</div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
             Descubre dónde puede aportar más valor la IA en tu trabajo
           </h2>
