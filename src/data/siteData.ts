@@ -160,30 +160,6 @@ export const COURSES: Course[] = [
     featured: true
   },
   {
-    id: "ia-analisis-decisiones",
-    slug: "ia-analisis-decisiones",
-    title: "IA Aplicada al Análisis y Toma de Decisiones",
-    category: "profesionales",
-    tag: "Análisis & Decisiones",
-    shortDesc: "Combina IA, documentos y datos para transformar información dispersa en análisis útiles para decidir.",
-    fullDesc: "Un programa conectado con el análisis económico, financiero y de gestión. El foco está en utilizar la IA para explorar información, formular preguntas, interpretar datos, generar insights y comunicar conclusiones de forma ejecutiva.",
-    duration: "Formato adaptable",
-    targetAudience: "Analistas, economistas, financieros, consultores y responsables de gestión",
-    skills: [
-      "Analizar documentos y fuentes de información",
-      "Explorar bases de datos y hojas de cálculo con apoyo de IA",
-      "Identificar KPIs, tendencias, comparaciones e insights",
-      "Convertir análisis en dashboards y reportes ejecutivos"
-    ],
-    modules: [
-      "Formulación de preguntas y análisis asistido por IA",
-      "Documentos, datos y hojas de cálculo",
-      "KPIs, insights y visualización",
-      "Dashboards, reportes y comunicación para decisiones"
-    ],
-    featured: true
-  },
-  {
     id: "ia-gestion-publica",
     slug: "ia-para-gestion-publica",
     title: "IA Aplicada a la Gestión Pública",
