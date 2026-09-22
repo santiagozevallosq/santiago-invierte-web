@@ -202,15 +202,15 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* CALCULADORA */}
+      {/* DIAGNÓSTICO INTERACTIVO */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 max-w-3xl">
+        <div className="mb-6 max-w-3xl">
           <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">05 // DIAGNÓSTICO INTERACTIVO</div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
-            Descubre dónde puede aportar más valor la IA en tu trabajo
+            ¿Dónde puede ayudarte más la IA?
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3">
-            Evalúa tus tareas y obtén una recomendación práctica sobre por dónde empezar a aplicar Inteligencia Artificial.
+            Evalúa tus tareas y descubre por dónde podrías empezar a aplicar Inteligencia Artificial de forma práctica.
           </p>
         </div>
         <TimeSavingsCalculator />
