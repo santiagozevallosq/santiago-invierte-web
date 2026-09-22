@@ -257,76 +257,62 @@ export const COURSES: Course[] = [
 export const SERVICES: Service[] = [
   {
     id: "capacitacion-in-company",
-    title: "Capacitaciones y Talleres In-Company",
-    badge: "Formación de Equipos",
-    shortDesc: "Programas diseñados a la medida de tu organización con ejercicios prácticos sobre las tareas y documentos reales de tu equipo.",
-    fullDesc: "No enseñamos teoría abstracta ni prompts genéricos de internet. Construimos el taller directamente sobre los archivos, formatos y dolores específicos de tu empresa para que al día siguiente cada participante aplique lo aprendido.",
+    title: "Capacitaciones y Talleres para Equipos",
+    badge: "Formación aplicada",
+    shortDesc: "Programas adaptados a las tareas, documentos y casos de cada organización.",
+    fullDesc: "Diseño capacitaciones prácticas para que los equipos aprendan a utilizar IA en situaciones cercanas a su trabajo. El contenido puede adaptarse al sector, los perfiles de los participantes y las tareas que buscan mejorar.",
     deliverables: [
-      "Diagnóstico previo de necesidades del equipo",
-      "Casos prácticos con formatos reales de la organización",
-      "Repositorio privado de prompts y guías de uso",
-      "Sesión de seguimiento y resolución de dudas"
+      "Diagnóstico de necesidades del equipo",
+      "Casos basados en tareas reales",
+      "Prompts y plantillas reutilizables",
+      "Materiales de apoyo para continuar aplicando lo aprendido"
     ],
-    idealFor: "Empresas, estudios jurídicos, consultoras, aseguradoras y entidades financieras.",
+    idealFor: "Empresas, instituciones públicas, universidades y equipos profesionales.",
     iconName: "Presentation"
   },
   {
     id: "diagnostico-oportunidades",
-    title: "Diagnóstico de Oportunidades de IA",
-    badge: "Consultoría Estratégica",
-    shortDesc: "Revisión integral de tareas y procesos para identificar dónde la IA genera ahorro de tiempo medible y mejores decisiones.",
-    fullDesc: "Antes de gastar dinero en software o suscripciones innecesarias, evaluamos tus procesos actuales para identificar los 3 o 4 puntos críticos donde la IA generará impacto visible en menos de 30 días.",
+    title: "Diagnóstico de Oportunidades con IA",
+    badge: "Exploración y priorización",
+    shortDesc: "Revisión de tareas y procesos para identificar dónde la IA puede aportar mayor valor.",
+    fullDesc: "Antes de incorporar nuevas herramientas, revisamos cómo trabaja el equipo, qué tareas consumen más tiempo y dónde existen oportunidades concretas para utilizar IA. El resultado es una priorización práctica de posibles casos de uso y siguientes pasos.",
     deliverables: [
-      "Matriz de priorización de procesos (Esfuerzo vs. Impacto)",
-      "Estimación de horas de trabajo recuperables por colaborador",
-      "Hoja de ruta tecnológica sin sobreingeniería",
-      "Recomendación de herramientas accesibles y económicas"
+      "Mapa de tareas y procesos relevantes",
+      "Identificación de oportunidades de uso de IA",
+      "Priorización por impacto y facilidad de implementación",
+      "Recomendación de herramientas y siguientes pasos"
     ],
-    idealFor: "Dirección general, gerentes de operaciones y líderes de innovación.",
+    idealFor: "Equipos que quieren empezar a utilizar IA pero todavía no tienen claro por dónde comenzar.",
     iconName: "SearchCheck"
   },
   {
     id: "asistentes-flujos",
-    title: "Diseño de Asistentes y Flujos sin Código",
-    badge: "Soluciones Prácticas",
-    shortDesc: "Construcción e implementación de asistentes personalizados y flujos repetibles sin necesidad de programar ni desarrollos costosos.",
-    fullDesc: "Creamos asistentes especializados que conocen los manuales, formatos y políticas de tu organización para redactar documentos, responder consultas o estructurar datos en segundos.",
+    title: "Diseño de Asistentes y Herramientas sin Código",
+    badge: "Soluciones prácticas",
+    shortDesc: "Prototipos y herramientas sencillas para convertir tareas repetitivas en flujos reutilizables.",
+    fullDesc: "Diseño y acompaño la creación de soluciones prácticas sin necesidad de desarrollos complejos: asistentes personalizados, dashboards, herramientas internas, plantillas y flujos que ayuden al equipo a trabajar con mayor orden y consistencia.",
     deliverables: [
-      "Asistentes entrenados con la documentación corporativa",
-      "Plantillas estructuradas de prompts para el personal",
-      "Manual de operación y buenas prácticas de uso",
-      "Garantía de funcionamiento y afinamiento posterior"
+      "Asistentes personalizados según el caso de uso",
+      "Dashboards o herramientas internas sencillas",
+      "Plantillas y flujos de trabajo reutilizables",
+      "Documentación básica para que el equipo pueda utilizarlos"
     ],
-    idealFor: "Equipos con tareas repetitivas de redacción, clasificación o atención de consultas.",
+    idealFor: "Equipos que ya identificaron una tarea concreta que quieren mejorar o prototipar con IA.",
     iconName: "Cpu"
   },
   {
-    id: "analisis-reportes",
-    title: "IA para Análisis Económico, Financiero y Reportes",
-    badge: "Decisiones Basadas en Datos",
-    shortDesc: "Metodología para transformar hojas de cálculo complejas y datos dispersos en reportes claros y accionables para la alta dirección.",
-    fullDesc: "Aprovecha la doble especialidad de Santiago (Economista y Magíster en Finanzas) para enseñar a tu equipo a cruzar información cualitativa y cuantitativa, preparar presentaciones de directorio y evitar errores comunes de interpretación.",
-    deliverables: [
-      "Estructuras de prompts para análisis financiero y de ratios",
-      "Plantillas para conversión de datos en resúmenes ejecutivos",
-      "Flujos de verificación cruzada para eliminar alucinaciones",
-      "Formatos de presentación directa para directores"
-    ],
-    idealFor: "Gerencias financieras, áreas de control de gestión y analistas de negocios.",
-    iconName: "BarChart3"
-  },
-  {
     id: "charlas-ejecutivas",
-    title: "Charlas y Conferencias Ejecutivas",
-    badge: "Visión Estratégica",
-    shortDesc: "Sesiones de alto impacto para directores y comités de gerencia sobre el estado real de la IA y su aplicación sin mitos.",
-    fullDesc: "Una sesión sin tecnicismos innecesarios que aterriza qué puede y qué no puede hacer la IA generativa hoy en los negocios, riesgos de ciberseguridad y propiedad intelectual, y cómo liderar la adopción en la empresa.",
+    title: "Charlas y Conferencias sobre IA Aplicada",
+    badge: "Divulgación y sensibilización",
+    shortDesc: "Sesiones claras y prácticas para acercar la IA a profesionales, equipos y organizaciones.",
+    fullDesc: "Charlas diseñadas para explicar qué puede aportar hoy la IA, mostrar casos y demostraciones comprensibles y abrir una conversación sobre cómo utilizarla en el trabajo. El contenido se adapta al sector, audiencia y objetivo del evento.",
     deliverables: [
-      "Conferencia de 60 a 90 minutos en vivo (presencial o virtual)",
-      "Espacio de preguntas directas y debate ejecutivo",
-      "Resumen ejecutivo en PDF con recomendaciones clave"
+      "Charlas de 60 a 90 minutos",
+      "Casos y demostraciones prácticas",
+      "Espacio de preguntas y conversación",
+      "Adaptación del contenido al sector o audiencia"
     ],
-    idealFor: "Directorios, comités ejecutivos, convenciones corporativas y universidades.",
+    idealFor: "Empresas, instituciones, universidades, asociaciones profesionales y eventos.",
     iconName: "Sparkles"
   }
 ];
@@ -385,27 +371,27 @@ Apuntes de la reunión:
 export const WORK_METHOD_STEPS = [
   {
     step: "01",
-    title: "Diagnosticar la Realidad",
-    desc: "Analizamos las tareas diarias, dolores del equipo y cuellos de botella reales, sin imponer soluciones de moda."
+    title: "Entender el problema",
+    desc: "Revisamos qué tareas consumen tiempo, generan fricción o podrían realizarse mejor con apoyo de IA."
   },
   {
     step: "02",
-    title: "Identificar Alto Impacto",
-    desc: "Priorizamos 2 o 3 procesos concretos donde la IA reduzca horas de trabajo de inmediato y con mínima fricción."
+    title: "Priorizar oportunidades",
+    desc: "Elegimos los casos donde la IA puede aportar valor y que sean razonables de implementar."
   },
   {
     step: "03",
-    title: "Diseñar el Método y Prompts",
-    desc: "Construimos plantillas, estructuras de verificación y flujos repetibles adaptados al vocabulario de tu empresa."
+    title: "Prototipar una solución",
+    desc: "Probamos una capacitación, asistente, plantilla, dashboard o flujo antes de complicar la solución."
   },
   {
     step: "04",
-    title: "Entrenamiento con Casos Reales",
-    desc: "Capacitamos al personal trabajando sobre sus propios expedientes, tablas o informes, no sobre teoría estéril."
+    title: "Aplicarlo con el equipo",
+    desc: "Trabajamos con situaciones y materiales cercanos a la realidad de las personas que lo utilizarán."
   },
   {
     step: "05",
-    title: "Autonomía Garantizada",
-    desc: "Entregamos bibliotecas de prompts, guías y criterios de verificación para que el equipo no dependa de consultores."
+    title: "Dejar capacidad instalada",
+    desc: "El equipo se queda con materiales, criterios y métodos que puede volver a utilizar."
   }
 ];
