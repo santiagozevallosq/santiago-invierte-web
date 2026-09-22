@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { COURSES, Course, getWhatsAppUrl } from '../data/siteData';
-import { CheckCircle2, Clock, Users, BookOpen, MessageCircle, ArrowRight, HelpCircle, Sparkles } from 'lucide-react';
+import { CheckCircle2, Clock, Users, BookOpen, MessageCircle, HelpCircle, FileSearch, Zap, Image, LayoutDashboard, Bot, Workflow } from 'lucide-react';
 
 export const Courses: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('todos');
 
   const categories = [
-    { id: 'todos', label: 'Todos los Cursos' },
+    { id: 'todos', label: 'Todos' },
     { id: 'profesionales', label: 'Profesionales' },
-    { id: 'negocios', label: 'Negocios & Ventas' },
-    { id: 'publico', label: 'Gestión Pública' },
-    { id: 'administracion', label: 'Administradores' },
+    { id: 'negocios', label: 'Negocios' },
+    { id: 'publico', label: 'Sector público' },
+    { id: 'administracion', label: 'Administración' },
     { id: 'inmobiliario', label: 'Inmobiliario' }
   ];
 
@@ -19,22 +19,10 @@ export const Courses: React.FC = () => {
     : COURSES.filter(c => c.category === selectedCategory);
 
   const faqs = [
-    {
-      q: "¿Necesito saber de programación o tener conocimientos técnicos?",
-      a: "No. Absolutamente ningún curso requiere programar. Todas las sesiones se desarrollan con herramientas accesibles de lenguaje natural, estructuración de instrucciones y aplicaciones no-code directas."
-    },
-    {
-      q: "¿Cómo son las clases y cuál es la modalidad?",
-      a: "Las clases son 100% prácticas y en vivo (con grabaciones disponibles). Se trabaja directamente sobre documentos, archivos y casos reales que los mismos alumnos traen al taller."
-    },
-    {
-      q: "¿Se entregan materiales y plantillas?",
-      a: "Sí. Cada participante recibe acceso a la biblioteca de prompts estructurados, grabaciones de las sesiones y guías paso a paso para uso continuo sin depender del docente."
-    },
-    {
-      q: "¿Se pueden tomar los cursos de manera corporativa para mi equipo?",
-      a: "Sí, todos los programas pueden adaptarse como talleres in-company exclusivos para tu empresa, adaptando los ejercicios a la documentación confidencial de tu organización."
-    }
+    { q: "¿Necesito saber programación?", a: "No. Los programas están diseñados para usuarios no técnicos y se trabaja principalmente con lenguaje natural y herramientas accesibles." },
+    { q: "¿Cómo se aprende en los cursos?", a: "El enfoque es aprender haciendo: cada tema se lleva a ejercicios, documentos, datos o situaciones similares a las que el participante encuentra en su trabajo o negocio." },
+    { q: "¿Los programas tienen siempre la misma duración?", a: "No necesariamente. Algunos son talleres específicos y otros programas más amplios. También pueden adaptarse a las necesidades de una organización." },
+    { q: "¿Se pueden realizar capacitaciones para equipos?", a: "Sí. Los contenidos pueden adaptarse a empresas e instituciones incorporando casos y tareas relevantes para el equipo." }
   ];
 
   return (
@@ -44,14 +32,20 @@ export const Courses: React.FC = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold uppercase tracking-wider mb-4">
           <BookOpen className="w-3.5 h-3.5" />
-          <span>Formación Práctica en Vivo</span>
+          <span>Formación práctica</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-slate-950 tracking-tight">
-          Cursos y Talleres de IA Aplicada
+          Cursos prácticos de Inteligencia Artificial
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mt-3">
-          Aprende a integrar la inteligencia artificial a tu trabajo cotidiano con método, rigor y enfoque en resultados tangibles.
+          Aprende utilizando casos reales y construye herramientas que puedas aplicar inmediatamente en tu trabajo o negocio. No necesitas saber programar.
         </p>
+
+        <div className="flex flex-wrap justify-center gap-2 mt-6 text-xs font-bold text-slate-700">
+          <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200">100 % práctico</span>
+          <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200">Para usuarios no técnicos</span>
+          <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200">Aprende haciendo</span>
+        </div>
 
         {/* Filtro de Categorías */}
         <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
@@ -68,6 +62,29 @@ export const Courses: React.FC = () => {
             >
               {cat.label}
             </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-8">
+          <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Resultados prácticos</span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 mt-2">¿Qué puedes aprender a hacer con IA?</h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+          {[
+            { icon: FileSearch, title: 'Analizar información', text: 'Documentos, datos e investigaciones.' },
+            { icon: Zap, title: 'Trabajar más rápido', text: 'Informes, correos y tareas repetitivas.' },
+            { icon: Image, title: 'Crear contenido', text: 'Imágenes, flyers y presentaciones.' },
+            { icon: LayoutDashboard, title: 'Construir herramientas', text: 'Webs, dashboards y simuladores.' },
+            { icon: Bot, title: 'Crear asistentes', text: 'GPTs, Gems y asistentes especializados.' },
+            { icon: Workflow, title: 'Automatizar tareas', text: 'Flujos sencillos sin programación.' }
+          ].map(({ icon: Icon, title, text }) => (
+            <div key={title} className="bg-white border border-slate-200 rounded-2xl p-4 text-left">
+              <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-3"><Icon className="w-4 h-4" /></div>
+              <h3 className="text-sm font-bold text-slate-900">{title}</h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">{text}</p>
+            </div>
           ))}
         </div>
       </section>
@@ -144,19 +161,19 @@ export const Courses: React.FC = () => {
                 <div className="lg:col-span-4 bg-slate-50 rounded-2xl p-6 border border-slate-200/90 flex flex-col justify-between h-full space-y-6">
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
-                      Convocatoria
+                      Información
                     </span>
                     <h4 className="text-lg font-bold text-slate-900">
-                      Próxima Fecha & Inscripción
+                      Consulta el programa
                     </h4>
                     <p className="text-xs text-slate-600 mt-2 leading-relaxed">
-                      Grupos reducidos para garantizar interacción y corrección de casos en vivo.
+                      Conoce el contenido, modalidad disponible y próxima edición.
                     </p>
 
                     <div className="mt-4 pt-4 border-t border-slate-200 space-y-2 text-xs text-slate-600">
                       <div className="flex justify-between">
                         <span>Modalidad:</span>
-                        <strong className="text-slate-900">Online en vivo + Grabaciones</strong>
+                        <strong className="text-slate-900">Consultar</strong>
                       </div>
                       <div className="flex justify-between">
                         <span>Docente:</span>
@@ -164,7 +181,7 @@ export const Courses: React.FC = () => {
                       </div>
                       <div className="flex justify-between">
                         <span>Materiales:</span>
-                        <strong className="text-slate-900">Acceso vitalicio a prompts</strong>
+                        <strong className="text-slate-900">Guías y recursos prácticos</strong>
                       </div>
                     </div>
                   </div>
