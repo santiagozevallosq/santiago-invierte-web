@@ -10,7 +10,6 @@ import {
   Globe2,
   MessageCircle,
   Presentation,
-  Sparkles,
   Users
 } from 'lucide-react';
 import { getWhatsAppUrl } from '../../data/siteData';
@@ -116,21 +115,6 @@ export const TimeSavingsCalculator: React.FC = () => {
       <div className="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-[90px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wider uppercase mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Diagnóstico de oportunidades con IA</span>
-          </div>
-
-          <h3 className="text-2xl sm:text-3xl font-black tracking-tight text-slate-950">
-            ¿Dónde puede ayudarte más la Inteligencia Artificial en tu trabajo?
-          </h3>
-
-          <p className="text-slate-600 text-sm mt-3">
-            Evalúa las tareas que realizas con mayor frecuencia y descubre en qué áreas puedes empezar a aplicar IA de manera práctica, sin programar.
-          </p>
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-7 space-y-7 bg-slate-50/80 p-6 sm:p-7 rounded-2xl border border-slate-200">
             <div>
@@ -160,10 +144,10 @@ export const TimeSavingsCalculator: React.FC = () => {
             <div>
               <div className="mb-4">
                 <span className="block text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  2. Evalúa tus tareas
+                  2. ¿Qué actividades forman parte de tu trabajo?
                 </span>
                 <p className="text-xs text-slate-500 mt-1">
-                  Marca Alto cuando la actividad sea frecuente, importante o te consuma bastante tiempo.
+                  Indica cuánto peso tiene cada actividad en tu trabajo.
                 </p>
               </div>
 
