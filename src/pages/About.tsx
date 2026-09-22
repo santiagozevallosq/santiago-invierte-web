@@ -1,45 +1,16 @@
 import React from 'react';
 import {
-  Briefcase,
-  GraduationCap,
   Lightbulb,
   Linkedin,
   MessageCircle,
-  Presentation,
   Video,
   Youtube,
   ArrowRight,
-  BookOpen,
-  Wrench
+  BookOpen
 } from 'lucide-react';
 import { SANTIAGO_INFO, getWhatsAppUrl } from '../data/siteData';
 
 export const About: React.FC = () => {
-  const today = [
-    {
-      icon: GraduationCap,
-      title: 'Docencia y formación',
-      text: 'Diseño y dicto cursos, talleres y programas de IA aplicada para profesionales, equipos y organizaciones.'
-    },
-    {
-      icon: Briefcase,
-      title: 'Consultoría',
-      text: 'Identifico oportunidades concretas para incorporar IA en tareas, procesos, análisis y toma de decisiones.'
-    },
-    {
-      icon: Wrench,
-      title: 'Experimentación',
-      text: 'Desarrollo asistentes, dashboards, páginas web, automatizaciones y herramientas prácticas para probar nuevas formas de trabajar.'
-    },
-    {
-      icon: Presentation,
-      title: 'Divulgación',
-      text: 'Comparto contenidos y experiencias para acercar la IA a personas que quieren aprovecharla sin necesidad de programar.'
-    }
-  ];
-
-
-
   return (
     <div className="pt-28 pb-20">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
@@ -85,12 +56,11 @@ export const About: React.FC = () => {
 
             <div className="mt-6 pt-5 border-t border-slate-200">
               <p className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
-                Trayectoria en breve
+                Trayectoria
               </p>
               <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-700">
-                <span><strong className="text-slate-950">Economista PUCP</strong></span>
-                <span>Magíster en Mercados Financieros</span>
-                <span>Estudios de Maestría en IA</span>
+                <span><strong className="text-slate-950">Economista</strong></span>
+                <span>Estudios de maestría en IA</span>
                 <span>+10 años de experiencia</span>
                 <span>Docente universitario</span>
               </div>
@@ -128,20 +98,6 @@ export const About: React.FC = () => {
             </div>
           </div>
 
-          <h3 className="text-2xl font-extrabold text-slate-900 mb-7">Lo que hago hoy</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {today.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex gap-4">
-                <div className="shrink-0 w-11 h-11 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-900 mb-1">{title}</h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">{text}</p>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
