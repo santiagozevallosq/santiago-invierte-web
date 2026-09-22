@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { WhatsAppFloat } from './components/common/WhatsAppFloat';
+import { SeoManager } from './components/common/SeoManager';
 import { Home } from './pages/Home';
 import { Courses } from './pages/Courses';
 import { Services } from './pages/Services';
 import { Resources } from './pages/Resources';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+
+export const SITE_BASENAME = '/santiago-invierte-web';
 
 // Scroll to top automatically on route changes
 const ScrollToTop: React.FC = () => {
@@ -21,10 +24,11 @@ const ScrollToTop: React.FC = () => {
   return null;
 };
 
-export const App: React.FC = () => {
+export const AppContent: React.FC = () => {
   return (
-    <Router>
+    <>
       <ScrollToTop />
+      <SeoManager />
       <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans selection:bg-emerald-500 selection:text-white">
         <Navbar />
         <main className="flex-grow">
@@ -41,6 +45,14 @@ export const App: React.FC = () => {
         <Footer />
         <WhatsAppFloat />
       </div>
+    </>
+  );
+};
+
+export const App: React.FC = () => {
+  return (
+    <Router basename={SITE_BASENAME}>
+      <AppContent />
     </Router>
   );
 };
