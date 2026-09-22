@@ -38,23 +38,7 @@ export const About: React.FC = () => {
     }
   ];
 
-  const principles = [
-    {
-      number: '01',
-      title: 'Primero el problema, después la herramienta',
-      text: 'No enseño una plataforma por moda. Partimos de una tarea concreta que queremos mejorar y elegimos la IA que realmente aporta valor.'
-    },
-    {
-      number: '02',
-      title: 'Aprender haciendo',
-      text: 'La IA se comprende cuando se usa. Trabajamos con documentos, datos y situaciones similares a las que enfrentamos en el trabajo.'
-    },
-    {
-      number: '03',
-      title: 'Resultados reutilizables',
-      text: 'El objetivo no es obtener una buena respuesta una vez, sino construir prompts, asistentes, plantillas y flujos que puedan volver a utilizarse.'
-    }
-  ];
+
 
   return (
     <div className="pt-28 pb-20">
@@ -98,6 +82,20 @@ export const About: React.FC = () => {
                 Hoy incorporo la Inteligencia Artificial a ese mismo propósito. No la enseño desde la programación ni desde los “prompts mágicos”, sino desde situaciones reales: analizar un documento, preparar un informe, explorar datos, crear una presentación, diseñar un dashboard, automatizar una tarea o transformar una idea en un producto digital.
               </p>
             </div>
+
+            <div className="mt-6 pt-5 border-t border-slate-200">
+              <p className="text-xs font-bold uppercase tracking-wider text-emerald-700 mb-3">
+                Trayectoria en breve
+              </p>
+              <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-700">
+                <span><strong className="text-slate-950">Economista PUCP</strong></span>
+                <span>Magíster en Mercados Financieros</span>
+                <span>Estudios de Maestría en IA</span>
+                <span>+10 años de experiencia</span>
+                <span>Docente universitario</span>
+              </div>
+            </div>
+
             <a
               href={getWhatsAppUrl('Hola Santiago, leí tu perfil y me gustaría conversar sobre cómo aplicar IA en mi trabajo u organización.')}
               target="_blank"
@@ -141,40 +139,6 @@ export const About: React.FC = () => {
                   <h4 className="font-bold text-slate-900 mb-1">{title}</h4>
                   <p className="text-sm text-slate-600 leading-relaxed">{text}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">Trayectoria</span>
-          <h2 className="text-3xl font-extrabold text-slate-900">Formación y experiencia que conecto con la IA</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SANTIAGO_INFO.credentials.map((cred, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-              <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-black text-sm mb-4">{idx + 1}</div>
-              <h3 className="font-bold text-slate-900 mb-2">{cred.title}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">{cred.detail}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="bg-slate-950 py-20 mb-20 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">Mi forma de trabajar y enseñar</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold mt-2">Tres principios sencillos</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {principles.map(item => (
-              <div key={item.number} className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
-                <span className="text-emerald-400 font-black text-sm">{item.number}</span>
-                <h3 className="font-bold text-lg mt-3 mb-3">{item.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
