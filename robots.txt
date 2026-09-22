@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://santiagozevallosq.github.io/santiago-invierte-web/sitemap.xml
