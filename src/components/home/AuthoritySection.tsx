@@ -12,7 +12,7 @@ export const AuthoritySection: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="mb-7 overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm">
               <img
-                src={`${import.meta.env.BASE_URL}santiago-zevallos-home.jpg`}
+                src="/santiago-invierte-web/santiago-zevallos-home.jpg"
                 alt="Santiago Zevallos"
                 className="w-full aspect-[4/5] object-cover object-top"
                 loading="lazy"
