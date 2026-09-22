@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BriefcaseBusiness,
+  Briefcase,
   GraduationCap,
   Lightbulb,
   Linkedin,
@@ -22,7 +22,7 @@ export const About: React.FC = () => {
       text: 'Diseño y dicto cursos, talleres y programas de IA aplicada para profesionales, equipos y organizaciones.'
     },
     {
-      icon: BriefcaseBusiness,
+      icon: Briefcase,
       title: 'Consultoría',
       text: 'Identifico oportunidades concretas para incorporar IA en tareas, procesos, análisis y toma de decisiones.'
     },
