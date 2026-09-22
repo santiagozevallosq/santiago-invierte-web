@@ -18,7 +18,6 @@ import {
 import { getWhatsAppUrl } from '../data/siteData';
 import { AuthoritySection } from '../components/home/AuthoritySection';
 import { TimeSavingsCalculator } from '../components/interactive/TimeSavingsCalculator';
-import { AnalyticalArtifact } from '../components/home/AnalyticalArtifact';
 
 const outcomes = [
   { icon: FileText, title: 'Documentos → Informes', desc: 'Resume, compara y convierte documentos extensos en entregables claros y verificables.' },
@@ -119,21 +118,6 @@ export const Home: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CASOS / DEMOSTRACIONES */}
-      <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mb-10">
-          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">02 // CASOS APLICADOS</div>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
-            De una tarea cotidiana a un resultado concreto con IA
-          </h2>
-          <p className="text-sm sm:text-base text-slate-600 mt-3">
-            Ejemplos de flujos que se trabajan en clases, demostraciones y proyectos prácticos.
-          </p>
-        </div>
-
-        <AnalyticalArtifact />
       </section>
 
       {/* AUTORIDAD */}

@@ -10,6 +10,15 @@ export const AuthoritySection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
+            <div className="mb-7 overflow-hidden rounded-3xl border border-slate-200 bg-slate-100 shadow-sm">
+              <img
+                src={`${import.meta.env.BASE_URL}santiago-zevallos-home.jpg`}
+                alt="Santiago Zevallos"
+                className="w-full aspect-[4/5] object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+
             <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">
               03 // QUIÉN ESTÁ DETRÁS
             </div>
@@ -47,7 +56,7 @@ export const AuthoritySection: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200">
                 <GraduationCap className="w-5 h-5 text-emerald-700 mb-3" />
-                <h3 className="font-bold text-slate-950">Economista PUCP</h3>
+                <h3 className="font-bold text-slate-950">Economista</h3>
                 <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                   Base analítica para interpretar datos, evaluar alternativas y estructurar problemas complejos.
                 </p>
