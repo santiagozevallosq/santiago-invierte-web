@@ -127,7 +127,7 @@ export const Home: React.FC = () => {
       <section className="py-20 bg-slate-50/70 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">04 // METODOLOGÍA</div>
+            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">03 // METODOLOGÍA</div>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
               Problema → Información → IA → Resultado → Sistema reutilizable
             </h2>
@@ -158,7 +158,7 @@ export const Home: React.FC = () => {
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-4">
-            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">05 // EVOLUCIÓN</div>
+            <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">04 // EVOLUCIÓN</div>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
               De prompts aislados a sistemas de trabajo con IA
             </h2>
@@ -187,7 +187,7 @@ export const Home: React.FC = () => {
       <section className="py-20 bg-slate-950 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-12">
-            <div className="text-xs font-mono tracking-widest text-emerald-400 uppercase mb-2">06 // FORMAS DE TRABAJO</div>
+            <div className="text-xs font-mono tracking-widest text-emerald-400 uppercase mb-2">05 // FORMAS DE TRABAJO</div>
             <h2 className="text-3xl sm:text-4xl font-black">¿Cómo puedo ayudarte?</h2>
           </div>
 
@@ -236,7 +236,7 @@ export const Home: React.FC = () => {
       {/* CALCULADORA */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 max-w-3xl">
-          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">07 // DIAGNÓSTICO INTERACTIVO</div>
+          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">06 // DIAGNÓSTICO INTERACTIVO</div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
             Descubre dónde puede aportar más valor la IA en tu trabajo
           </h2>
