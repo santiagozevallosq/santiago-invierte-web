@@ -1,209 +1,215 @@
 import React from 'react';
-import { 
-  GraduationCap, 
-  TrendingUp, 
-  Cpu, 
-  Award, 
-  BookOpen, 
-  Users, 
-  MessageCircle, 
-  Linkedin, 
-  Youtube, 
-  Video, 
-  CheckCircle2, 
-  ArrowRight 
+import {
+  BriefcaseBusiness,
+  GraduationCap,
+  Lightbulb,
+  Linkedin,
+  MessageCircle,
+  Presentation,
+  Video,
+  Youtube,
+  ArrowRight,
+  BookOpen,
+  Wrench
 } from 'lucide-react';
 import { SANTIAGO_INFO, getWhatsAppUrl } from '../data/siteData';
 
 export const About: React.FC = () => {
+  const today = [
+    {
+      icon: GraduationCap,
+      title: 'Docencia y formación',
+      text: 'Diseño y dicto cursos, talleres y programas de IA aplicada para profesionales, equipos y organizaciones.'
+    },
+    {
+      icon: BriefcaseBusiness,
+      title: 'Consultoría',
+      text: 'Identifico oportunidades concretas para incorporar IA en tareas, procesos, análisis y toma de decisiones.'
+    },
+    {
+      icon: Wrench,
+      title: 'Experimentación',
+      text: 'Desarrollo asistentes, dashboards, páginas web, automatizaciones y herramientas prácticas para probar nuevas formas de trabajar.'
+    },
+    {
+      icon: Presentation,
+      title: 'Divulgación',
+      text: 'Comparto contenidos y experiencias para acercar la IA a personas que quieren aprovecharla sin necesidad de programar.'
+    }
+  ];
+
+  const principles = [
+    {
+      number: '01',
+      title: 'Primero el problema, después la herramienta',
+      text: 'No enseño una plataforma por moda. Partimos de una tarea concreta que queremos mejorar y elegimos la IA que realmente aporta valor.'
+    },
+    {
+      number: '02',
+      title: 'Aprender haciendo',
+      text: 'La IA se comprende cuando se usa. Trabajamos con documentos, datos y situaciones similares a las que enfrentamos en el trabajo.'
+    },
+    {
+      number: '03',
+      title: 'Resultados reutilizables',
+      text: 'El objetivo no es obtener una buena respuesta una vez, sino construir prompts, asistentes, plantillas y flujos que puedan volver a utilizarse.'
+    }
+  ];
+
   return (
     <div className="pt-28 pb-20">
-      
-      {/* Header & Perfil */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          {/* Foto Representativa / Tarjeta */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-5">
-            <div className="bg-slate-900 rounded-3xl p-8 border border-slate-800 text-white shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-
-              <div className="text-center relative z-10 space-y-4">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-emerald-500 to-teal-700 mx-auto flex items-center justify-center text-white text-4xl font-black shadow-xl shadow-emerald-950 border-4 border-slate-800">
-                  SZ
-                </div>
-
-                <div>
-                  <h1 className="text-2xl sm:text-3xl font-black text-white">
-                    Santiago Zevallos
-                  </h1>
-                  <p className="text-sm font-semibold text-emerald-400 mt-1">
-                    Economista PUCP • Magíster en Finanzas
-                  </p>
-                  <p className="text-xs text-slate-400 mt-0.5">
-                    Docente Universitario & Especialista en IA Aplicada
-                  </p>
-                </div>
-
-                <div className="pt-2 flex justify-center gap-3">
-                  <a
-                    href={SANTIAGO_INFO.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
-                    title="LinkedIn"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={SANTIAGO_INFO.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
-                    title="YouTube"
-                  >
-                    <Youtube className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={SANTIAGO_INFO.tiktok}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors"
-                    title="TikTok"
-                  >
-                    <Video className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={getWhatsAppUrl()}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition-colors"
-                    title="WhatsApp Directo"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                  </a>
-                </div>
-
-                <div className="pt-4 border-t border-slate-800 text-xs text-slate-400">
-                  <span>Lima, Perú • Docencia Nacional e Internacional</span>
+            <div className="relative max-w-md mx-auto lg:mx-0">
+              <div className="absolute -inset-4 bg-emerald-100 rounded-[2rem] rotate-2" />
+              <img
+                src="/santiago-invierte-web/santiago-zevallos-home.jpg"
+                alt="Santiago Zevallos"
+                className="relative w-full aspect-[4/5] object-cover object-top rounded-3xl shadow-xl border border-slate-200"
+              />
+              <div className="relative -mt-6 mx-5 bg-slate-950 text-white rounded-2xl p-5 shadow-xl">
+                <p className="text-sm font-bold">Santiago Zevallos</p>
+                <p className="text-xs text-emerald-400 mt-1">IA aplicada a productividad, análisis y toma de decisiones.</p>
+                <div className="flex gap-2 mt-4">
+                  <a href={SANTIAGO_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700" title="LinkedIn"><Linkedin className="w-4 h-4" /></a>
+                  <a href={SANTIAGO_INFO.youtube} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700" title="YouTube"><Youtube className="w-4 h-4" /></a>
+                  <a href={SANTIAGO_INFO.tiktok} target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700" title="TikTok"><Video className="w-4 h-4" /></a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Biografía y Enfoque */}
-          <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold uppercase tracking-wider">
-              <span>Trayectoria & Filosofía</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              "No enseño IA desde la programación, sino desde el uso real y la toma de decisiones."
-            </h2>
-
-            <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+          <div className="lg:col-span-7">
+            <span className="inline-flex px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold uppercase tracking-wider mb-5">
+              Sobre mí
+            </span>
+            <h1 className="text-4xl sm:text-5xl font-black text-slate-950 tracking-tight leading-[1.08] mb-6">
+              Hola, soy Santiago.
+            </h1>
+            <p className="text-xl sm:text-2xl font-bold text-slate-800 leading-snug mb-7">
+              Economista, docente y consultor. Ayudo a profesionales y organizaciones a convertir la Inteligencia Artificial en una herramienta real de trabajo.
+            </p>
+            <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                Soy economista graduado de la <strong>Pontificia Universidad Católica del Perú (PUCP)</strong>, con una <strong>Maestría en Mercados Financieros</strong> y actualmente cursando estudios de <strong>Maestría en Inteligencia Artificial</strong>.
-              </p>
-              <p>
-                A lo largo de más de 10 años de experiencia profesional en el sector público y privado, he liderado análisis económicos, evaluación de proyectos de inversión, gestión pública y análisis cuantitativo de datos.
+                Mi formación viene de la economía, las finanzas y el análisis de datos. Durante más de diez años he trabajado entre la docencia, la consultoría y el sector público, siempre alrededor de un mismo problema: <strong className="text-slate-900">cómo usar mejor la información para tomar mejores decisiones.</strong>
               </p>
               <p>
-                Cuando la Inteligencia Artificial generativa irrumpió en el mercado, noté una brecha gigantesca: la mayoría de capacitaciones se centraban en trucos superficiales de "prompts mágicos" o en tecnicismos de código incomprensibles para abogados, directores, funcionarios y analistas.
-              </p>
-              <p className="font-semibold text-slate-900">
-                Mi enfoque es simple y riguroso: que la IA te ayude a trabajar mejor, ahorrar horas de desgaste mecánico y tomar decisiones fundamentadas, sin obligarte a aprender a programar.
+                Hoy incorporo la Inteligencia Artificial a ese mismo propósito. No la enseño desde la programación ni desde los “prompts mágicos”, sino desde situaciones reales: analizar un documento, preparar un informe, explorar datos, crear una presentación, diseñar un dashboard, automatizar una tarea o transformar una idea en un producto digital.
               </p>
             </div>
-
-            <div className="pt-2">
-              <a
-                href={getWhatsAppUrl("Hola Santiago, leí tu perfil y me gustaría coordinar una conversación.")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-white font-bold text-sm shadow-md transition-all hover:scale-105"
-              >
-                <MessageCircle className="w-4 h-4 text-emerald-400" />
-                <span>Conversar directamente por WhatsApp</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            </div>
+            <a
+              href={getWhatsAppUrl('Hola Santiago, leí tu perfil y me gustaría conversar sobre cómo aplicar IA en mi trabajo u organización.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-white font-bold text-sm shadow-md transition-all hover:-translate-y-0.5"
+            >
+              <MessageCircle className="w-4 h-4 text-emerald-400" />
+              Conversemos
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
-
         </div>
       </section>
 
-      {/* Credenciales en Detalle */}
+      <section className="bg-slate-50 border-y border-slate-200 py-20 mb-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mb-12">
+            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Mi historia con la IA</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 mt-2 mb-5">De analizar información a enseñar nuevas formas de trabajar</h2>
+            <div className="space-y-4 text-slate-600 leading-relaxed">
+              <p>
+                Mi acercamiento a la IA surgió de una pregunta muy práctica: <strong className="text-slate-900">¿cómo puedo hacer en menos tiempo y con mayor calidad el trabajo que ya realizo como economista, consultor y docente?</strong>
+              </p>
+              <p>
+                Empecé utilizándola para investigar, analizar documentos, trabajar con datos, preparar clases y desarrollar materiales. Después comencé a convertir esos aprendizajes en cursos, talleres y soluciones para otros profesionales.
+              </p>
+              <p>
+                Esa experiencia define mi enfoque actual: experimentar primero, entender qué funciona en una tarea real y después convertirlo en un método sencillo que otras personas puedan aplicar.
+              </p>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-extrabold text-slate-900 mb-7">Lo que hago hoy</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {today.map(({ icon: Icon, title, text }) => (
+              <div key={title} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex gap-4">
+                <div className="shrink-0 w-11 h-11 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center">
+                  <Icon className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-slate-900 mb-1">{title}</h4>
+                  <p className="text-sm text-slate-600 leading-relaxed">{text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">
-            Respaldo Académico y Profesional
-          </span>
-          <h3 className="text-3xl font-extrabold text-slate-900">
-            Formación Continua y Experiencia
-          </h3>
+          <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">Trayectoria</span>
+          <h2 className="text-3xl font-extrabold text-slate-900">Formación y experiencia que conecto con la IA</h2>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {SANTIAGO_INFO.credentials.map((cred, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-              <div className="w-10 h-10 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center justify-center font-bold">
-                {idx + 1}
-              </div>
-              <h4 className="text-base font-bold text-slate-900">
-                {cred.title}
-              </h4>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                {cred.detail}
-              </p>
+            <div key={idx} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <div className="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-800 flex items-center justify-center font-black text-sm mb-4">{idx + 1}</div>
+              <h3 className="font-bold text-slate-900 mb-2">{cred.title}</h3>
+              <p className="text-sm text-slate-600 leading-relaxed">{cred.detail}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Pilares Pedagógicos */}
-      <section className="bg-slate-100/70 py-16 border-y border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-slate-900">
-              Los 3 Principios de la Metodología
-            </h3>
+      <section className="bg-slate-950 py-20 mb-20 text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mb-10">
+            <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">Mi forma de trabajar y enseñar</span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold mt-2">Tres principios sencillos</h2>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-slate-200">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center mb-3 text-sm">
-                01
+            {principles.map(item => (
+              <div key={item.number} className="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+                <span className="text-emerald-400 font-black text-sm">{item.number}</span>
+                <h3 className="font-bold text-lg mt-3 mb-3">{item.title}</h3>
+                <p className="text-sm text-slate-400 leading-relaxed">{item.text}</p>
               </div>
-              <h4 className="font-bold text-slate-900 mb-2">Aprender Haciendo</h4>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Cada sesión se aplica sobre los documentos y tareas reales de los participantes. No hay ejercicios ficticios.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl border border-slate-200">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center mb-3 text-sm">
-                02
-              </div>
-              <h4 className="font-bold text-slate-900 mb-2">Sin Código</h4>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Herramientas intuitivas, lenguaje natural estructurado y flujos mantenibles por cualquier persona.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl border border-slate-200">
-              <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center mb-3 text-sm">
-                03
-              </div>
-              <h4 className="font-bold text-slate-900 mb-2">Con Método, No Suerte</h4>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Estructuras repetibles que garantizan consistencia en los entregables y eliminan la improvisación.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl bg-emerald-50 border border-emerald-200 p-8 sm:p-12">
+          <div className="flex items-center gap-3 text-emerald-800 mb-4">
+            <Lightbulb className="w-6 h-6" />
+            <span className="text-xs font-bold uppercase tracking-wider">¿Por qué Santiago Invierte?</span>
+          </div>
+          <h2 className="text-3xl font-extrabold text-slate-950 mb-5">Un espacio para aprender, experimentar y aplicar.</h2>
+          <p className="text-slate-700 leading-relaxed max-w-3xl mb-7">
+            Santiago Invierte es mi espacio para compartir herramientas, cursos y experimentos sobre IA aplicada. Aquí encontrarás recursos para utilizar Inteligencia Artificial en productividad, análisis, creación de contenidos, negocios y toma de decisiones, explicados desde una perspectiva práctica y para personas que no necesitan saber programar.
+          </p>
+          <div className="flex flex-wrap gap-3 text-sm font-bold text-slate-800 mb-8">
+            {['Cursos', 'Recursos prácticos', 'Herramientas', 'Consultoría'].map(x => (
+              <span key={x} className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-xl border border-emerald-200">
+                <BookOpen className="w-4 h-4 text-emerald-700" /> {x}
+              </span>
+            ))}
+          </div>
+          <a
+            href={getWhatsAppUrl('Hola Santiago, quisiera conversar sobre cómo aplicar IA en mi trabajo u organización.')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            Hablemos de tu caso
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
