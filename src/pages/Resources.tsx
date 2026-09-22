@@ -1,6 +1,6 @@
 import React from 'react';
 import { PromptShowcase } from '../components/interactive/PromptShowcase';
-import { BookOpen, Sparkles, MessageCircle, CheckCircle2, Zap, BarChart3, Palette, Wrench, FileText, Bot } from 'lucide-react';
+import { BookOpen, MessageCircle } from 'lucide-react';
 import { getWhatsAppUrl } from '../data/siteData';
 
 export const Resources: React.FC = () => {
@@ -33,30 +33,6 @@ export const Resources: React.FC = () => {
         </div>
 
         <PromptShowcase />
-      </section>
-
-      {/* Cómo usar los recursos */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
-        <div className="bg-slate-50 rounded-3xl border border-slate-200 p-8 sm:p-10">
-          <div className="max-w-3xl">
-            <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Más que copiar un prompt</span>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-950 mt-2">Convierte cada recurso en un pequeño flujo de trabajo</h3>
-            <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">La idea es que puedas partir de una plantilla, probarla con tu propia información, revisar el resultado y adaptarla hasta convertirla en una forma de trabajo reutilizable.</p>
-          </div>
-          <div className="grid sm:grid-cols-3 gap-4 mt-8">
-            {[
-              { icon: FileText, title: '1. Parte de tu información', text: 'Documento, Excel, idea, negocio o tarea real.' },
-              { icon: Sparkles, title: '2. Usa la plantilla', text: 'Copia, completa y adapta la instrucción al contexto.' },
-              { icon: Bot, title: '3. Reutiliza el método', text: 'Guarda lo que funciona como plantilla, asistente o flujo.' }
-            ].map(({ icon: Icon, title, text }) => (
-              <div key={title} className="bg-white rounded-2xl border border-slate-200 p-5">
-                <Icon className="w-5 h-5 text-emerald-700 mb-3" />
-                <h4 className="font-bold text-slate-900">{title}</h4>
-                <p className="text-xs text-slate-600 mt-1 leading-relaxed">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* Comunidad */}
