@@ -20,7 +20,7 @@ export const AuthoritySection: React.FC = () => {
             </div>
 
             <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">
-              03 // QUIÉN ESTÁ DETRÁS
+              02 // QUIÉN ESTÁ DETRÁS
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
               IA explicada desde el trabajo real, no desde la programación.
