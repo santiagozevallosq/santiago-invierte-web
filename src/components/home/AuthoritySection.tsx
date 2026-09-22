@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageCircle, ArrowRight, GraduationCap, BookOpen, BriefcaseBusiness, Cpu } from 'lucide-react';
+import { MessageCircle, ArrowRight, GraduationCap, BookOpen, Briefcase, Cpu } from 'lucide-react';
 import { getWhatsAppUrl } from '../../data/siteData';
 import { Link } from 'react-router-dom';
 
