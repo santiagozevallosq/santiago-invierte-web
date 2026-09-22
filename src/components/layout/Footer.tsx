@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageCircle, Linkedin, Video, Youtube, Mail, ArrowUpRight, GraduationCap, ShieldCheck } from 'lucide-react';
+import { Linkedin, Video, Youtube, Mail, ArrowUpRight, GraduationCap } from 'lucide-react';
 import { SANTIAGO_INFO, getWhatsAppUrl } from '../../data/siteData';
 
 export const Footer: React.FC = () => {
@@ -82,27 +82,27 @@ export const Footer: React.FC = () => {
           {/* Col 3: Cursos */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Cursos Especializados
+              Cursos y Talleres
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link to="/cursos" className="text-slate-400 hover:text-white transition-colors">
-                  IA para Finanzas y Modelamiento
+                  IA para Profesionales
                 </Link>
               </li>
               <li>
                 <Link to="/cursos" className="text-slate-400 hover:text-white transition-colors">
-                  IA para Abogados y Contratos
+                  IA para Negocios
                 </Link>
               </li>
               <li>
                 <Link to="/cursos" className="text-slate-400 hover:text-white transition-colors">
-                  IA para Gestión Pública
+                  Páginas Web con IA
                 </Link>
               </li>
               <li>
                 <Link to="/cursos" className="text-slate-400 hover:text-white transition-colors">
-                  Automatizaciones sin Código
+                  IA Aplicada al Análisis
                 </Link>
               </li>
               <li>
@@ -122,22 +122,22 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs">
               <li>
                 <Link to="/servicios" className="text-slate-400 hover:text-white transition-colors">
-                  Capacitación In-House
+                  Capacitaciones y Talleres
                 </Link>
               </li>
               <li>
                 <Link to="/servicios" className="text-slate-400 hover:text-white transition-colors">
-                  Auditoría de Procesos
+                  Diagnóstico de Oportunidades
                 </Link>
               </li>
               <li>
                 <Link to="/servicios" className="text-slate-400 hover:text-white transition-colors">
-                  Implementación de Asistentes
+                  Asistentes y Herramientas sin Código
                 </Link>
               </li>
               <li>
                 <Link to="/servicios" className="text-slate-400 hover:text-white transition-colors">
-                  Conferencias Ejecutivas
+                  Charlas y Conferencias
                 </Link>
               </li>
               <li>
@@ -157,37 +157,37 @@ export const Footer: React.FC = () => {
           {/* Col 5: Recursos */}
           <div className="space-y-3">
             <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-              Recursos & Enlaces
+              Recursos y Comunidad
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link to="/recursos" className="text-slate-400 hover:text-white transition-colors">
-                  Plantillas de Prompts
+                  Plantillas prácticas de IA
                 </Link>
               </li>
               <li>
                 <Link to="/recursos" className="text-slate-400 hover:text-white transition-colors">
-                  Guías y Manuales en PDF
+                  Guías y recursos
                 </Link>
               </li>
               <li>
                 <Link to="/sobre-mi" className="text-slate-400 hover:text-white transition-colors">
-                  Credenciales de Santiago
+                  Sobre Santiago
                 </Link>
               </li>
               <li>
                 <Link to="/contacto" className="text-slate-400 hover:text-white transition-colors">
-                  Canal de Contacto
+                  Contacto
                 </Link>
               </li>
               <li>
                 <a
-                  href={getWhatsAppUrl("Hola Santiago, me gustaría unirme a la comunidad de WhatsApp.")}
+                  href={getWhatsAppUrl("Hola Santiago, quiero conocer cómo unirme a la comunidad IA para Todos.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-emerald-400 font-semibold hover:underline inline-flex items-center gap-1"
                 >
-                  <span>Comunidad de WhatsApp</span>
+                  <span>IA para Todos</span>
                   <ArrowUpRight className="w-3 h-3" />
                 </a>
               </li>
@@ -200,8 +200,8 @@ export const Footer: React.FC = () => {
         <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>© 2026 Santiago Invierte. Todos los derechos reservados. Lima, Perú.</p>
           <div className="flex items-center gap-6">
-            <span>Enfoque Metodológico • Cero Código</span>
-            <span>Respaldo PUCP</span>
+            <span>IA aplicada • Enfoque práctico</span>
+            <span>Sin necesidad de programar</span>
           </div>
         </div>
 
