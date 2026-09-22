@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Copy, Check, Terminal, Sparkles, BookOpen, ExternalLink } from 'lucide-react';
-import { PROMPT_TEMPLATES, getWhatsAppUrl } from '../../data/siteData';
+import { Copy, Check, Terminal } from 'lucide-react';
+import { PROMPT_TEMPLATES } from '../../data/siteData';
 
 export const PromptShowcase: React.FC = () => {
   const [copiedId, setCopiedId] = useState<string | null>(null);
@@ -15,7 +15,7 @@ export const PromptShowcase: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
         {PROMPT_TEMPLATES.map((tpl) => {
           const isCopied = copiedId === tpl.id;
 
@@ -33,7 +33,7 @@ export const PromptShowcase: React.FC = () => {
                   </span>
                   <div className="flex items-center gap-1 text-[10px] text-slate-400">
                     <Terminal className="w-3 h-3" />
-                    <span>Prompt Estructurado</span>
+                    <span>Plantilla práctica</span>
                   </div>
                 </div>
 
@@ -66,7 +66,7 @@ export const PromptShowcase: React.FC = () => {
               {/* Footer con botón de copiar */}
               <div className="p-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
                 <span className="text-[11px] text-slate-500 font-medium">
-                  {isCopied ? '¡Copiado con éxito!' : 'Listo para usar en ChatGPT/Claude'}
+                  {isCopied ? '¡Copiado con éxito!' : 'Copia y adapta a tu herramienta'}
                 </span>
                 
                 <button
@@ -97,31 +97,7 @@ export const PromptShowcase: React.FC = () => {
         })}
       </div>
 
-      {/* Banner de recursos adicionales */}
-      <div className="bg-gradient-to-r from-emerald-900 via-slate-900 to-navy-950 p-6 sm:p-8 rounded-2xl text-white border border-emerald-500/30 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
-        <div className="space-y-1 text-center sm:text-left">
-          <div className="flex items-center gap-2 justify-center sm:justify-start text-xs font-bold text-emerald-400 uppercase tracking-wider">
-            <Sparkles className="w-4 h-4" />
-            <span>Biblioteca Completa de Recursos</span>
-          </div>
-          <h4 className="text-lg sm:text-xl font-bold text-white">
-            ¿Quieres la guía completa con más de 30 plantillas por sector?
-          </h4>
-          <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
-            Únete a la comunidad oficial de WhatsApp o solicita el acceso directo a nuestras guías de prompting analítico sin costo.
-          </p>
-        </div>
 
-        <a
-          href={getWhatsAppUrl("Hola Santiago, me gustaría recibir la guía y plantillas de prompts para profesionales.")}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-105"
-        >
-          <BookOpen className="w-4 h-4" />
-          <span>Solicitar guía por WhatsApp</span>
-        </a>
-      </div>
     </div>
   );
 };
