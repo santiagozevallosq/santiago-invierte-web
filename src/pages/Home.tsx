@@ -236,12 +236,12 @@ export const Home: React.FC = () => {
       {/* CALCULADORA */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-10 max-w-3xl">
-          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">07 // HERRAMIENTA INTERACTIVA</div>
+          <div className="text-xs font-mono tracking-widest text-emerald-800 uppercase mb-2">07 // DIAGNÓSTICO INTERACTIVO</div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
-            ¿Cuánto tiempo podrías recuperar utilizando IA?
+            Descubre dónde puede aportar más valor la IA en tu trabajo
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3">
-            Estima el costo de las horas que hoy dedicas a lectura, consolidación de información y redacción repetitiva.
+            Evalúa tus tareas y obtén una recomendación práctica sobre por dónde empezar a aplicar Inteligencia Artificial.
           </p>
         </div>
         <TimeSavingsCalculator />
