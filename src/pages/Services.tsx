@@ -31,13 +31,13 @@ export const Services: React.FC = () => {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 text-center">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold uppercase tracking-wider mb-4">
           <Building2 className="w-3.5 h-3.5" />
-          <span>Soluciones Corporativas & Institucionales</span>
+          <span>Servicios para equipos y organizaciones</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-slate-950 tracking-tight">
-          IA Aplicada para Organizaciones y Equipos
+          Servicios de IA aplicada para organizaciones
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mt-3">
-          Reduzca costos operativos, ahorre cientos de horas en tareas manuales y mejore la calidad del análisis directivo sin inversiones faraónicas de software.
+          Ayudo a equipos y organizaciones a identificar dónde la Inteligencia Artificial puede mejorar su trabajo y a convertir esas oportunidades en capacitaciones, herramientas y flujos prácticos.
         </p>
       </section>
 
@@ -83,7 +83,7 @@ export const Services: React.FC = () => {
                 <div className="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between h-full space-y-6">
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">
-                      Entregables Garantizados:
+                      Qué podemos trabajar:
                     </h4>
                     <div className="space-y-3">
                       {srv.deliverables.map((del, idx) => (
@@ -104,7 +104,7 @@ export const Services: React.FC = () => {
                     className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all hover:scale-[1.02]"
                   >
                     <MessageCircle className="w-4 h-4 text-emerald-400" />
-                    <span>Solicitar Propuesta para mi Empresa</span>
+                    <span>Consultar este servicio</span>
                   </a>
                 </div>
 
@@ -120,13 +120,13 @@ export const Services: React.FC = () => {
           
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-2">
-              Rigor Metodológico
+              Forma de trabajo
             </span>
             <h3 className="text-3xl font-black text-slate-950 tracking-tight">
-              Garantizamos adopción real sin generar dependencia
+              Cómo trabajo con una organización
             </h3>
             <p className="text-sm text-slate-600 mt-2">
-              Nuestro objetivo es que tu equipo adquiera autonomía metodológica en 30 a 60 días.
+              Partimos del problema y avanzamos hacia soluciones que el equipo pueda comprender, probar y volver a utilizar.
             </p>
           </div>
 
@@ -144,20 +144,20 @@ export const Services: React.FC = () => {
 
           <div className="mt-16 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-md max-w-3xl mx-auto text-center space-y-4">
             <h4 className="text-xl font-bold text-slate-950">
-              ¿Quieres agendar un diagnóstico inicial sin compromiso?
+              ¿Quieres explorar dónde puede ayudarte la IA?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600">
-              Conversamos 20 minutos por videollamada para revisar tus procesos actuales y estimar el impacto en tiempo y costos.
+              Cuéntame brevemente qué hace tu equipo y qué tareas quieres mejorar. Podemos conversar sobre qué tipo de solución tendría más sentido.
             </p>
             <div className="pt-2">
               <a
-                href={getWhatsAppUrl("Hola Santiago, me gustaría coordinar una videollamada de diagnóstico para mi organización.")}
+                href={getWhatsAppUrl("Hola Santiago, quisiera conversar sobre cómo podríamos aplicar IA en mi equipo u organización.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-md shadow-emerald-950/20 transition-all hover:scale-105"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Agendar diagnóstico por WhatsApp</span>
+                <span>Conversemos por WhatsApp</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
