@@ -1,0 +1,24 @@
+# Santiago Invierte
+
+> Sitio de Santiago Zevallos sobre Inteligencia Artificial aplicada a productividad, negocios y toma de decisiones.
+
+## Sobre Santiago Zevallos
+Santiago Zevallos es economista, docente universitario y consultor. Su enfoque es enseñar y aplicar Inteligencia Artificial de manera práctica a profesionales, emprendedores, equipos y organizaciones, sin necesidad de programar.
+
+## Secciones principales
+- [Inicio](https://santiagozevallosq.github.io/santiago-invierte-web/)
+- [Cursos y talleres](https://santiagozevallosq.github.io/santiago-invierte-web/cursos/)
+- [Servicios para organizaciones](https://santiagozevallosq.github.io/santiago-invierte-web/servicios/)
+- [Recursos prácticos](https://santiagozevallosq.github.io/santiago-invierte-web/recursos/)
+- [Sobre Santiago](https://santiagozevallosq.github.io/santiago-invierte-web/sobre-mi/)
+- [Contacto](https://santiagozevallosq.github.io/santiago-invierte-web/contacto/)
+
+## Temas principales
+- Inteligencia Artificial aplicada al trabajo
+- Productividad profesional
+- Análisis de información y datos
+- Dashboards y toma de decisiones
+- Creación de páginas web con IA
+- Contenido e imágenes con IA
+- Asistentes y herramientas sin código
+- Capacitación de equipos y organizaciones
