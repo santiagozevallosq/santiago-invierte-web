@@ -62,7 +62,7 @@ export const AuthoritySection: React.FC = () => {
               </div>
 
               <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-                <BriefcaseBusiness className="w-5 h-5 text-emerald-700 mb-3" />
+                <Briefcase className="w-5 h-5 text-emerald-700 mb-3" />
                 <h3 className="font-bold text-slate-950">Experiencia pública y privada</h3>
                 <p className="text-xs text-slate-600 mt-2 leading-relaxed">
                   Más de 10 años trabajando con análisis, proyectos, gestión, consultoría y toma de decisiones.
