@@ -319,52 +319,142 @@ export const SERVICES: Service[] = [
 
 export const PROMPT_TEMPLATES: PromptTemplate[] = [
   {
-    id: "analisis-contratos",
-    title: "Análisis y Detección de Riesgos en Contratos",
-    category: "Legal y Negocios",
-    description: "Extrae cláusulas críticas, plazos de renovación, penalidades y ambigüedades de cualquier contrato comercial.",
-    tags: ["Contratos", "Riesgos", "Legal"],
-    prompt: `Actúa como un analista legal y de riesgos comerciales senior. Revisa el siguiente contrato y genera un informe ejecutivo estructurado con:
-1. Resumen de partes, objeto y vigencia.
-2. Matriz de Obligaciones Críticas (Parte responsable | Plazo | Entregable).
-3. Cláusulas de Alerta / Riesgo (Penalidades, resolución unilateral, arbitrajes).
-4. Próximos hitos temporales y fechas límite.
-5. Recomendaciones de redacción o advertencias de negociación.
-
-Texto del contrato a evaluar:
-[PEGAR_TEXTO_AQUÍ]`
-  },
-  {
-    id: "sintesis-financiera",
-    title: "Conversión de Estados Financieros a Resumen Ejecutivo",
-    category: "Finanzas y Dirección",
-    description: "Convierte números y balances fríos en una narrativa clara sobre liquidez, rentabilidad y alertas operativas para directores.",
-    tags: ["Finanzas", "Ratios", "Directorio"],
-    prompt: `Actúa como un CFO y Economista senior. Analiza los siguientes estados financieros y redacta un reporte ejecutivo para el Directorio:
-1. Resumen en 3 bullets de la salud financiera del periodo.
-2. Análisis de Liquidez y Solvencia (con interpretación clara del impacto en operaciones).
-3. Márgenes y Rentabilidad (explicando variaciones relevantes respecto al periodo anterior).
-4. Principales 3 riesgos financieros o de flujo de caja a vigilar.
-5. Preguntas clave que el Directorio debería hacer a la gerencia de operaciones.
-
-Datos financieros:
-[PEGAR_TABLA_O_DATOS_AQUÍ]`
-  },
-  {
-    id: "acta-reunion",
-    title: "Estructuración de Acuerdos y Minutas de Reunión",
+    id: "analizar-documento",
+    title: "Analiza un documento y encuentra lo importante",
     category: "Productividad",
-    description: "Transforma notas desordenadas o transcripciones de reuniones en un plan de acción formal y limpio.",
-    tags: ["Reuniones", "Minutas", "Gestión"],
-    prompt: `Actúa como un Director de Operaciones (COO). A partir de los siguientes apuntes desordenados de nuestra reunión, genera:
-1. Objetivo y participantes de la sesión.
-2. Principales temas discutidos y conclusiones acordadas.
-3. Tabla de Compromisos y Acciones:
-   | Tarea / Entregable | Responsable | Fecha Límite | Criterio de Éxito |
-4. Temas pendientes que requieren otra sesión.
+    description: "Convierte un PDF, Word o texto extenso en hallazgos, pendientes, riesgos y preguntas útiles.",
+    tags: ["Documentos", "Análisis", "Productividad"],
+    prompt: `Actúa como un analista profesional. Voy a adjuntar un documento.
 
-Apuntes de la reunión:
-[PEGAR_NOTAS_AQUÍ]`
+Primero identifica qué tipo de documento es, su objetivo y su estructura. Luego:
+1. Resume las ideas principales sin inventar información.
+2. Identifica datos, acuerdos, fechas, cifras o elementos relevantes.
+3. Señala riesgos, vacíos, contradicciones o puntos que requieren verificación.
+4. Formula preguntas que ayuden a profundizar el análisis.
+5. Presenta al final una síntesis ejecutiva con los 5 hallazgos más importantes.
+
+Si una información no aparece en el documento, indícalo expresamente. No completes vacíos con supuestos.`
+  },
+  {
+    id: "analizar-excel",
+    title: "Descubre qué puedes analizar en tu Excel",
+    category: "Análisis y decisiones",
+    description: "Carga una hoja de cálculo y convierte sus variables en KPIs, comparaciones y preguntas de negocio.",
+    tags: ["Excel", "KPIs", "Datos"],
+    prompt: `Analiza el archivo Excel que voy a adjuntar. Antes de realizar cálculos, identifica:
+1. Qué información contiene la base.
+2. Cuáles son las variables disponibles y qué representa cada una.
+3. Qué indicadores o KPIs relevantes podrían calcularse.
+4. Qué tendencias, comparaciones, rankings o segmentos sería útil analizar.
+5. Qué preguntas de negocio pueden responderse con estos datos.
+
+Luego propón un plan de análisis priorizado. No inventes variables que no existan en el archivo y señala cualquier problema de calidad de datos que detectes.`
+  },
+  {
+    id: "dashboard-ia",
+    title: "Diseña un dashboard a partir de tus datos",
+    category: "Análisis y decisiones",
+    description: "Transforma el análisis de una base en una propuesta clara de KPIs, gráficos, filtros e insights.",
+    tags: ["Dashboard", "Visualización", "KPIs"],
+    prompt: `A partir del análisis de la base de datos que acabas de realizar, diseña la estructura de un dashboard interactivo.
+
+Define:
+1. Los KPIs principales que deberían mostrarse.
+2. Los gráficos más adecuados y qué pregunta responde cada uno.
+3. Los filtros que debería utilizar el usuario.
+4. Las comparaciones, rankings o segmentaciones más relevantes.
+5. Los insights que el dashboard debería ayudar a identificar.
+
+Organiza la propuesta por secciones y prioriza claridad y utilidad para la toma de decisiones. No construyas todavía el dashboard.`
+  },
+  {
+    id: "brief-web",
+    title: "Crea el brief de una página web",
+    category: "Negocios",
+    description: "Ordena la información de un negocio para convertirla en una instrucción reutilizable para crear su web con IA.",
+    tags: ["Web", "Brief", "Negocios"],
+    prompt: `Actúa como consultor de negocios y diseñador UX/UI. Ayúdame a preparar un brief para crear una página web con Inteligencia Artificial.
+
+Primero hazme las preguntas necesarias para recopilar, como mínimo:
+- nombre y descripción del negocio;
+- público objetivo;
+- productos o servicios;
+- propuesta de valor;
+- datos de contacto;
+- redes sociales;
+- llamadas a la acción;
+- identidad visual disponible;
+- páginas de referencia;
+- secciones que debería tener la web.
+
+Haz las preguntas de forma ordenada y sencilla. Cuando responda, organiza toda la información en un brief limpio, completo y listo para guardar como archivo TXT y utilizar en una herramienta de creación web con IA.`
+  },
+  {
+    id: "presentacion-ia",
+    title: "Convierte información en una presentación",
+    category: "Comunicación",
+    description: "Pasa de un documento o conjunto de ideas a una estructura narrativa clara para una presentación.",
+    tags: ["Presentaciones", "Storytelling", "Comunicación"],
+    prompt: `Actúa como experto en presentaciones ejecutivas y storytelling. A partir de la información que voy a proporcionar:
+
+1. Identifica el objetivo principal de la presentación y la audiencia.
+2. Define el mensaje central que debería recordar la audiencia.
+3. Propón una secuencia narrativa clara.
+4. Diseña una estructura de diapositivas indicando para cada una: título, mensaje principal y contenido visual recomendado.
+5. Reduce texto innecesario y prioriza ideas que puedan explicarse visualmente.
+
+No inventes cifras ni evidencia. Si falta información importante, indícala antes de incorporarla.`
+  },
+  {
+    id: "asistente-ia",
+    title: "Diseña un asistente para una tarea",
+    category: "Automatización",
+    description: "Convierte una tarea recurrente en la ficha inicial de un asistente de IA especializado.",
+    tags: ["Asistentes", "Flujos", "Productividad"],
+    prompt: `Quiero diseñar un asistente de IA para una tarea recurrente de mi trabajo.
+
+Hazme preguntas para identificar:
+1. Qué tarea quiero resolver.
+2. Quién utilizará el asistente.
+3. Qué información recibirá como entrada.
+4. Qué resultado debería entregar.
+5. Qué reglas, criterios o restricciones debe respetar.
+6. Qué documentos o ejemplos podrían servirle como referencia.
+7. Qué errores debería evitar.
+
+Después de mis respuestas, crea una ficha del asistente con: objetivo, usuario, entradas, proceso esperado, formato de salida, reglas y ejemplos de uso.`
+  },
+  {
+    id: "avatar-realista",
+    title: "Crea un avatar realista y consistente",
+    category: "Contenido visual",
+    description: "Plantilla para definir un personaje realista que pueda reutilizarse de forma consistente en imágenes y contenido.",
+    tags: ["Avatar", "Imágenes", "Marca"],
+    prompt: `Actúa como director creativo especializado en personajes realistas generados con IA.
+
+Quiero crear un avatar original y consistente para utilizarlo en contenido visual. Primero pregúntame por:
+- edad aproximada;
+- género o apariencia deseada;
+- rasgos del rostro;
+- tono de piel;
+- cabello;
+- vestimenta;
+- estilo y personalidad;
+- profesión o contexto de uso;
+- tipo de iluminación;
+- fondo habitual;
+- encuadres que necesitaré.
+
+Después crea una FICHA MAESTRA DEL AVATAR que incluya:
+1. Descripción física detallada.
+2. Vestimenta principal y alternativas.
+3. Expresión y lenguaje corporal.
+4. Estilo fotográfico e iluminación.
+5. Prompt maestro reutilizable.
+6. Variantes para rostro frontal, perfil, tres cuartos y medio cuerpo.
+7. Elementos que deben mantenerse constantes entre imágenes.
+
+El resultado debe buscar apariencia fotográfica natural y coherencia visual, evitando copiar la identidad de una persona real específica.`
   }
 ];
 
