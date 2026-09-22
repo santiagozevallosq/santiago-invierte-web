@@ -88,72 +88,145 @@ export const COURSES: Course[] = [
   {
     id: "ia-profesionales",
     slug: "ia-para-profesionales",
-    title: "IA para Profesionales y Ejecutivos",
+    title: "IA para Profesionales",
     category: "profesionales",
-    tag: "Más Popular",
-    shortDesc: "Base práctica para incorporar IA generativa al trabajo diario: redacción ejecutiva, análisis de documentos densos y ahorro de horas semanales.",
-    fullDesc: "Aprende a pasar de prompts sueltos a flujos de trabajo repetibles. Diseñado para abogados, analistas, consultores, auditores y profesionales que trabajan intensamente con textos, números y plazos ajustados.",
-    duration: "4 sesiones prácticas (12 horas)",
-    targetAudience: "Profesionales independientes, analistas, directivos y mandos medios que no programan.",
+    tag: "Programa principal",
+    shortDesc: "Incorpora la IA a tareas reales de oficina, análisis y comunicación sin necesidad de programar.",
+    fullDesc: "Un programa práctico para profesionales que quieren utilizar la IA como asistente de trabajo: investigar, analizar documentos, redactar mejor, trabajar con datos, crear presentaciones y construir flujos reutilizables.",
+    duration: "Programa práctico · 15–20 horas",
+    targetAudience: "Profesionales y equipos no técnicos",
     skills: [
-      "Redacción y estandarización de informes técnicos en minutos",
-      "Lectura y extracción de conclusiones de documentos de 100+ páginas",
-      "Depuración de datos y estructuración rápida de tablas",
-      "Síntesis de reuniones y actas ejecutivas automáticas"
+      "Analizar y resumir documentos extensos",
+      "Redactar informes, correos y propuestas con mayor rapidez",
+      "Trabajar con Excel, datos e información para obtener insights",
+      "Crear presentaciones, asistentes y flujos de productividad"
     ],
     modules: [
-      "Módulo 1: Fundamentos y marco metodológico (más allá de ChatGPT básico)",
-      "Módulo 2: Técnicas avanzadas de prompting analítico y contextual",
-      "Módulo 3: Flujos de análisis documental, contratos y normativa",
-      "Módulo 4: Automatización personal y sistematización de entregables"
+      "Fundamentos de IA generativa y uso profesional",
+      "Análisis y gestión de información",
+      "Informes, redacción y comunicación profesional",
+      "Datos, dashboards y apoyo a la toma de decisiones",
+      "Automatización básica y asistentes personalizados"
     ],
     featured: true
   },
   {
     id: "ia-negocios",
     slug: "ia-para-negocios",
-    title: "IA Aplicada a Negocios y Emprendimiento",
+    title: "IA para Negocios",
     category: "negocios",
-    tag: "Enfoque Comercial",
-    shortDesc: "Casos de uso reales para fundadores y equipos comerciales: creación de propuestas, atención a clientes, prospección y análisis de mercado.",
-    fullDesc: "Optimiza la captación y fidelización de clientes usando herramientas de IA accesibles sin invertir en desarrollo de software a medida.",
-    duration: "4 sesiones prácticas (10 horas)",
-    targetAudience: "Emprendedores, gerentes comerciales, consultores de negocios y líderes de ventas.",
+    tag: "Aprende construyendo",
+    shortDesc: "Usa IA para crear contenido, analizar información y desarrollar herramientas digitales para tu negocio.",
+    fullDesc: "Diseñado para emprendedores y profesionales que quieren pasar de usar un chatbot a construir resultados concretos: piezas visuales, contenido, páginas web, dashboards, asistentes y automatizaciones sencillas.",
+    duration: "Programa práctico por módulos",
+    targetAudience: "Emprendedores, profesionales independientes y pequeños negocios",
     skills: [
-      "Generación de propuestas comerciales hiper-personalizadas",
-      "Análisis de competidores y síntesis de estudios de mercado",
-      "Respuestas y flujos de soporte y ventas asistidos por IA",
-      "Creación consistente de contenido de marca y autoridad"
+      "Crear imágenes, flyers y contenido para el negocio",
+      "Diseñar páginas web con herramientas de IA",
+      "Construir dashboards interactivos a partir de datos",
+      "Crear asistentes y automatizaciones simples sin código"
     ],
     modules: [
-      "Módulo 1: Estrategia de IA en el embudo comercial",
-      "Módulo 2: Elaboración de propuestas y cotizaciones persuasivas",
-      "Módulo 3: Asistentes de prospección y análisis de datos de clientes",
-      "Módulo 4: Creación ágil de presentaciones comerciales"
+      "IA para productividad y organización del negocio",
+      "Creación de contenido, imágenes y comunicación",
+      "Páginas web con IA",
+      "Dashboards y análisis de información",
+      "Asistentes personalizados y automatización"
+    ],
+    featured: true
+  },
+  {
+    id: "web-ia-negocios",
+    slug: "paginas-web-con-ia",
+    title: "Creación de Páginas Web con IA para Negocios",
+    category: "negocios",
+    tag: "Taller especializado",
+    shortDesc: "Convierte la información de tu negocio en una página web funcional utilizando IA, sin aprender programación.",
+    fullDesc: "Taller paso a paso para organizar la información del negocio, definir referencias visuales, preparar un brief y utilizar herramientas de IA para construir y publicar una web con llamadas a la acción reales.",
+    duration: "6 horas",
+    targetAudience: "Emprendedores, profesionales independientes y pequeños negocios",
+    skills: [
+      "Organizar la información necesaria para una página web",
+      "Crear un brief reutilizable para trabajar con IA",
+      "Usar referencias visuales sin copiar otras marcas",
+      "Construir y publicar una web con herramientas como Lovable y GitHub"
+    ],
+    modules: [
+      "Paso 1: Información, objetivos y brief del negocio",
+      "Paso 2: Referencias, estructura y experiencia de usuario",
+      "Paso 3: Construcción de la web con IA",
+      "Paso 4: Revisión, publicación y mejoras"
+    ],
+    featured: true
+  },
+  {
+    id: "ia-analisis-decisiones",
+    slug: "ia-analisis-decisiones",
+    title: "IA Aplicada al Análisis y Toma de Decisiones",
+    category: "profesionales",
+    tag: "Análisis & Decisiones",
+    shortDesc: "Combina IA, documentos y datos para transformar información dispersa en análisis útiles para decidir.",
+    fullDesc: "Un programa conectado con el análisis económico, financiero y de gestión. El foco está en utilizar la IA para explorar información, formular preguntas, interpretar datos, generar insights y comunicar conclusiones de forma ejecutiva.",
+    duration: "Formato adaptable",
+    targetAudience: "Analistas, economistas, financieros, consultores y responsables de gestión",
+    skills: [
+      "Analizar documentos y fuentes de información",
+      "Explorar bases de datos y hojas de cálculo con apoyo de IA",
+      "Identificar KPIs, tendencias, comparaciones e insights",
+      "Convertir análisis en dashboards y reportes ejecutivos"
+    ],
+    modules: [
+      "Formulación de preguntas y análisis asistido por IA",
+      "Documentos, datos y hojas de cálculo",
+      "KPIs, insights y visualización",
+      "Dashboards, reportes y comunicación para decisiones"
     ],
     featured: true
   },
   {
     id: "ia-gestion-publica",
     slug: "ia-para-gestion-publica",
-    title: "IA para la Gestión Pública y Regulación",
+    title: "IA Aplicada a la Gestión Pública",
     category: "publico",
-    tag: "Sector Público",
-    shortDesc: "Uso responsable, seguro y ético de IA en entidades del Estado: informes técnicos, expedientes, revisión de normativa y simplificación administrativa.",
-    fullDesc: "Pensado específicamente para funcionarios y servidores públicos que gestionan grandes volúmenes de expedientes, informes técnicos y requerimientos de auditoría y control.",
-    duration: "4 sesiones (12 horas)",
-    targetAudience: "Funcionarios del Estado, asesores legales, especialistas en compras públicas y analistas de políticas.",
+    tag: "Programa especializado",
+    shortDesc: "Aplicaciones prácticas de IA para documentos, análisis, productividad y gestión de información en el sector público.",
+    fullDesc: "Formación adaptable para equipos del sector público que buscan incorporar IA de manera práctica en tareas de análisis documental, elaboración de informes, revisión de información y productividad.",
+    duration: "Formato adaptable",
+    targetAudience: "Funcionarios, especialistas y equipos del sector público",
     skills: [
-      "Revisión y comparación cruzada de bases, normas y resoluciones",
-      "Estructuración rigurosa de informes técnicos y memorandos",
-      "Buenas prácticas de privacidad de datos e integridad institucional",
-      "Reducción del retraso en la atención de expedientes complejos"
+      "Analizar normativa y documentos extensos",
+      "Apoyar la elaboración y revisión de informes",
+      "Organizar y comparar información de distintas fuentes",
+      "Diseñar flujos de trabajo asistidos por IA"
     ],
     modules: [
-      "Módulo 1: Marco de gobernanza, privacidad y uso ético en el Estado",
-      "Módulo 2: Procesamiento masivo de expedientes y resoluciones",
-      "Módulo 3: Elaboración de informes legales y técnicos",
-      "Módulo 4: Indicadores y monitoreo de gestión pública con IA"
+      "Uso responsable de IA en el trabajo público",
+      "Análisis documental y normativa",
+      "Informes, síntesis y comunicación",
+      "Productividad y flujos reutilizables"
+    ]
+  },
+  {
+    id: "ia-agentes-inmobiliarios",
+    slug: "ia-agentes-inmobiliarios",
+    title: "IA para Agentes Inmobiliarios",
+    category: "inmobiliario",
+    tag: "Programa especializado",
+    shortDesc: "IA aplicada a contenido, fichas de propiedades, comunicación comercial y productividad inmobiliaria.",
+    fullDesc: "Taller orientado a agentes que quieren utilizar IA para presentar mejor sus propiedades, producir contenido y acelerar tareas comerciales sin perder su estilo personal.",
+    duration: "Formato adaptable",
+    targetAudience: "Agentes, brokers y profesionales inmobiliarios",
+    skills: [
+      "Crear fichas y descripciones de propiedades",
+      "Generar flyers y contenido visual",
+      "Preparar mensajes y seguimiento comercial",
+      "Organizar información y tareas con asistentes de IA"
+    ],
+    modules: [
+      "Productividad del agente con IA",
+      "Contenido y comunicación inmobiliaria",
+      "Imágenes y piezas comerciales",
+      "Asistentes y flujos de seguimiento"
     ]
   },
   {
@@ -161,43 +234,22 @@ export const COURSES: Course[] = [
     slug: "ia-administradores-edificios",
     title: "IA para Administradores de Edificios y Condominios",
     category: "administracion",
-    tag: "Especializado",
-    shortDesc: "Comunicaciones claras con propietarios, actas de asamblea, análisis de presupuestos de mantenimiento y gestión documental sin fricción.",
-    fullDesc: "Soluciona uno de los mayores dolores de la administración inmobiliaria: el tiempo excesivo invertido en responder correos repetitivos, armar convocatorias y redactar actas formales.",
-    duration: "3 sesiones (8 horas)",
-    targetAudience: "Empresas administradoras de edificios, juntas de propietarios y administradores independientes.",
+    tag: "Programa especializado",
+    shortDesc: "Herramientas prácticas para comunicaciones, actas, documentos y tareas frecuentes de administración.",
+    fullDesc: "Programa aplicado a situaciones cotidianas de la administración de edificios: redactar comunicaciones, estructurar actas, revisar documentos y organizar información utilizando IA.",
+    duration: "Formato adaptable",
+    targetAudience: "Administradores, juntas y empresas administradoras",
     skills: [
-      "Redacción inmediata de actas de asamblea y acuerdos",
-      "Comunicaciones asertivas para gestión de cobranza y mora",
-      "Comparativa rápida de cotizaciones de proveedores y contratistas",
-      "Respuestas ordenadas a consultas vecinales frecuentes"
+      "Redactar comunicados y respuestas",
+      "Estructurar actas y acuerdos",
+      "Comparar cotizaciones y documentos",
+      "Crear asistentes para tareas recurrentes"
     ],
     modules: [
-      "Módulo 1: Automatización de comunicaciones y circulares",
-      "Módulo 2: Generación rápida de actas y reglamentos internos",
-      "Módulo 3: Control presupuestal y comparativa de presupuestos"
-    ]
-  },
-  {
-    id: "ia-agentes-inmobiliarios",
-    slug: "ia-agentes-inmobiliarios",
-    title: "IA para Agentes y Brokers Inmobiliarios",
-    category: "inmobiliario",
-    tag: "Ventas & Real Estate",
-    shortDesc: "Fichas descriptivas atractivas, análisis de comparables de mercado, seguimiento automatizado a clientes y presencia digital efectiva.",
-    fullDesc: "Diferénciate en el mercado inmobiliario redactando descripciones de propiedades que realmente conviertan y respondiendo con velocidad a cada interesado.",
-    duration: "3 sesiones (8 horas)",
-    targetAudience: "Brokers, agentes independientes y promotores de proyectos inmobiliarios.",
-    skills: [
-      "Fichas técnicas y descripciones vendedoras para portales inmobiliarios",
-      "Guiones personalizados de seguimiento a prospectos por WhatsApp",
-      "Resumen de contratos de arrendamiento y compraventa",
-      "Estrategia de contenido para redes sociales en minutos"
-    ],
-    modules: [
-      "Módulo 1: Fichas atractivas y copywriting inmobiliario",
-      "Módulo 2: Calificación de leads y guiones de venta",
-      "Módulo 3: Análisis de precios de mercado con datos asistidos"
+      "Fundamentos y productividad con IA",
+      "Comunicaciones y documentos",
+      "Análisis de información administrativa",
+      "Asistentes y casos aplicados"
     ]
   }
 ];
